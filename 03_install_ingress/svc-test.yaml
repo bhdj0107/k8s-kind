@@ -1,0 +1,13 @@
+# svc-test.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-test
+spec:
+  selector:
+    app: service_test_pod
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
